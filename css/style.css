@@ -13,10 +13,11 @@ body {
   height: 100%;
   background: #1A232C;
   color: white;
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 85%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -966,6 +967,14 @@ input, textarea {
 .social_media .box span:hover {
   color: #FFC514;
 }
+.social_media .content a {
+  text-decoration: none; /* Removes the default underline */
+  color: inherit; /* Keeps the text color same as its parent */
+}
+
+.social_media .content a:hover {
+  color: inherit; /* Ensures color doesn't change on hover */
+}
 
 /*---------social_media--------*/
 /*---------footer--------*/
@@ -1019,9 +1028,11 @@ footer .box li:hover {
   opacity: 1;
 }
 
-footer .legal {
-  margin-top: 10px;
-  padding-bottom: 20px;
+.legal {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Ensures text is centered */
 }
 
 /*---------footer--------*/
