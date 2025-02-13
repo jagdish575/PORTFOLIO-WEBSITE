@@ -1210,3 +1210,9 @@ footer .box li:hover {
 
   /*---------social_media--------*/
 }
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none; /* Hidden by default */
+}
